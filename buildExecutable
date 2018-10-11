@@ -1,0 +1,6 @@
+cd /
+/Users/sandeepveeranki/Desktop/pratice/dfj
+docker stop helloworld
+docker rm helloworld
+docker build -t hello-world  /Users/sandeepveeranki/Desktop/pratice/dfj
+docker run -d --name helloworld -p 80:80 -v /Users/sandeepveeranki/Desktop/pratice/dfj/src/:/var/www/html hello-world
